@@ -2,8 +2,7 @@ from matplotlib import pyplot as plt
 
 plt.style.use("ggplot")
 
-years_x = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 
-           2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+years_x = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
 tor_avg_y = [
     385375, 394375, 418950, 463600, 477793,
@@ -21,11 +20,11 @@ van_avg_y = [
 
 plt.plot(years_x, van_avg_y, color="k", marker="o", label="Vancouver")
 
-plt.legend(loc="upper left")
-
 plt.xlabel("Years")
 plt.ylabel("Average House Price (CAD)")
 plt.title("Average House Price (CAD) by Year")
+
+plt.legend()
 
 plt.grid(True)
 
